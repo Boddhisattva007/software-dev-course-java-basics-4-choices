@@ -13,12 +13,23 @@ public class CollectionChoiceExercises {
         // of three strings that are known ahead of time to be "Red", "Green" and "Blue"
         // and will not change during program execution.
 
-        String[] colors;
+        String[3] colors;
+
+        String[0] = "Red";
+        String[1] = "Green";
+        String[2] = "Blue";
     }
 
     public void MakeStudentCollection() {
         // Create an appropriate collection variable for holding a list of student names
         // that will be added to and removed from during program execution.
+
+        ArrayList<String> names = new ArrayList<String>();
+
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+
     }
 
     public void MakeLoggedInUsersCollection() {
@@ -26,11 +37,31 @@ public class CollectionChoiceExercises {
         // unique logged in usernames where adding a username that's already
         // present is ignored and checking if a user is in the collection can
         // be done very quickly.
+
+        HashSet<String> names = new HashSet<String>();
+
+        names.add("Alice");
+        names.add("Bob");
+        names.add("Charlie");
+        names.add("Alice");
+
+
+
     }
 
     public void MakeEmployeeAccessCodesCollection() {
         // Create an appropriate collection variable for holding a set of
         // key-value pairs where they key is an employee name (String) and the
         // value is an employee access code (String.)
+
+        HashMap<String, Integer> ages = new HashMap<String, Integer>();
+
+        ages.put("Alice", 30);
+        ages.put("Bob", 25);
+        ages.put("Charlie", 35);
+        ages.put("Alice", 31);
+
+
+
     }
 }
